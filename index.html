@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Maze - A Flip Game</title>
+    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./output/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      id="root"
+      class="h-screen flex flex-col bg-gradient-to-tr from-red-500 to-blue-500 space-y-14 md:space-y-7"
+    >
+      <header
+        class="relative border-b border-dotted border-black h-28 flex flex-row justify-between items-center md:flex md:flex-row md:justify-center md:items-center rounded-3xl"
+      >
+        <h1
+          class="text-5xl w-1/2 md:text-center md:left-0 font-HennyPenny bg-clip-text text-transparent text-bg-img bg-cover bg-center"
+        >
+          Memory Maze
+        </h1>
+
+        <button
+          type="button"
+          id="restart"
+          class="bg-transparent backdrop-blur-xl border-b-2 font-HennyPenny text-xl absolute right-8 md:right-16 bg-white rounded-lg px-4 py-2 shadow-xl"
+        >
+          restart
+        </button>
+      </header>
+      <main
+        class="flip-tile grid grid-cols-3 gap-2 p-2 md:grid-cols-3 md:gap-4 md:p-4"
+      ></main>
+      <div class="won flex flex-col justify-center items-center gap-8"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
